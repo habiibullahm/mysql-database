@@ -36,7 +36,7 @@ rekap:
 8. generate model -> npx sequelize model:generate --name NamaModel --attributes entity:data type
 //npx sequelize model:generate --name todo --attributes entity:string
 //untuk nama model harus PascalCase 
-9. folder controllers,app.js, folder routes
+9. folder controllers,app.js, folder Routes
 10. bikin migration u/ membuat foreignkey -> npx sequelize migration:generate --name add-UserId-into-Todo untuk -> bikin column untuk foreignkey
 11. migrate ke dalam db -> npx sequelize db:migrate (semua) --name 20220104065812-create-todo (1 file)
 12. constraint dan validation
