@@ -78,7 +78,12 @@ class ProductController {
     })
 
     .then((data) => {
-      res.status(200).json({msg: `Successfully edited task id: ${id}`})
+      if (!data) {
+        res.status(404).json({msg: `Product is not found`})
+      }
+      else {
+        res.status(200).json({msg: `Successfully edited task id: ${id}`})
+      }
     })
 
     .catch((err) => {
