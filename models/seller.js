@@ -44,10 +44,6 @@ module.exports = (sequelize, DataTypes) => {
         notEmpty: {
           args: true,
           msg: `Password must be filled!`
-        },
-        len : {
-          args: [4,6],
-          msg: `Password character must be 4 - 6 chars!`
         }
       }
     }, 
